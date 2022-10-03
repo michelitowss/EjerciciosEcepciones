@@ -1,8 +1,10 @@
 package Excepciones;
+
 import java.util.Scanner;
 
 public class Animales {
     Scanner sc = new Scanner(System.in);
+
     String name;
     String size;
     double peso;
@@ -43,25 +45,40 @@ public class Animales {
     @Override
     public String toString() {
         return "Animales{" +
-                "name='" + name + '\'' +
-                ", raza='" + size + '\'' +
+                ", name='" + name + '\'' +
+                ", size='" + size + '\'' +
                 ", peso=" + peso +
                 '}';
     }
 
-    public String nombre (){
-        System.out.println("Escriba el tipo de animal : ");
+
+    // metodos para ingresar datos al diccionario
+
+
+    public String nombre() {
+        System.out.println("Escriba el nombre del animal : ");
         String nombre = sc.nextLine();
         return nombre;
     }
-    public String tamaño (){
+
+    public String tamaño() {
         System.out.println("Tamaño del animal : ");
         String tamaño = sc.nextLine();
         return tamaño;
     }
-    public double masa () {
+
+    public double masa() {
         System.out.println("Masa del animal : ");
         double masa = sc.nextDouble();
         return masa;
     }
+    /*
+    public String tipo() {
+        System.out.println("Esccriba el tipo del animal : ");
+        String tipo = sc.nextLine();
+        return tipo;
+    }
+
+     */
+
 }
